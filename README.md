@@ -11,3 +11,13 @@ Introdução ao Javascript para programção Web
 - Back-End: depende da plataforma Node.JS, depende da linha de comnado
 - JS pode ser usado tambem para criação de aplicações web, usando tecnologias  como React, Angular, React Native etc.
 
+## Onde usar JS dentro do Front-End?
+
+Recursos interativos em geral, como por exemplo:
+
+- Funcionalidades de menu responsivo
+- Galerias de fotos
+- Carrossel/Slider de conteúdo
+- Recursos avançados de formulário (validação mais profissional, integração com API)
+- Interações avançadas (manipulaçoes de teclado, mouse, gestos etc)
+
