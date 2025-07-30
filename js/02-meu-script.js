@@ -1,3 +1,12 @@
+//Habilitando o modo estrito
+'Use strict';
+
+let teste = "Senac";
+console.log(teste);
+
+let userInterface = "Teste";
+console.log(userInterface);
+
 /* Exercícios */
 
 // 1) Crie uma variável chamada "uc" e coloque nela o número da UC que estamos
@@ -21,6 +30,7 @@ console.log("Gosto 'muito' de paçoca")
 
 // CORRETO
 console.log("Gosto \"muito\" de paçoca")
+
 
 
 
