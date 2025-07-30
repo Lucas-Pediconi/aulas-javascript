@@ -1,5 +1,5 @@
 //Habilitando o modo estrito
-'Use strict';
+'use strict';
 
 let teste = "Senac";
 console.log(teste);
