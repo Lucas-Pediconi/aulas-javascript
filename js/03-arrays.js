@@ -12,7 +12,12 @@ console.log(jogadores[0]);
 
 console.log(`O ${jogadores[1]} está jogando muito no Corinthians`);
 
-
+//Relembrando como criar/usar arrays (vetor)
+// No JS, vc pode colocar qualquer coisa em uma array
+let seiLa = 6;
+const coisas= [10, "Senac", "<h2>Oie</h2>", seiLa, 15.88];
+console.log(coisas[1]);
+console.log(coisas[4]);
 
 
 
