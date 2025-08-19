@@ -80,3 +80,9 @@ else{
 }
 
 
+
+console.log("\nExemplo 4");
+/*Condicional COMPOSTA 
+com operador TERNÁRIO    ? :         */
+let situacao = idade>=18 ? "maior" : "menor"
+console.log(situacao);
