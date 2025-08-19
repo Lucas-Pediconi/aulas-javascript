@@ -11,7 +11,9 @@ console.log("Exemplo &&");
 let idade = 20;
 let temCarta = true;
 
-if(idade >=18 && temCarta ===true){
+// if(idade >=18 && temCarta === true)
+
+if(idade >=18 && temCarta){
     console.log("Pode dirigir");
 }
 else{
