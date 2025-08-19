@@ -72,18 +72,16 @@ console.log(livros[2].titulo);
 const aluno = {
     nome_completo: "Lucas Pediconi",
     data_nascimento: "13/02/2005",
-    lista_telefones: [
-        "11 98752-3536",
-        "11 94214-0909"
-    ],
+    lista_telefones: ["11 98752-3536", "11 94214-0909"],
     endereço: {
         rua:"R Epaminondas",
-        numero:122,
+        numero:"122",
         bairro:"JD Roberto",
     }
 }
 
 console.log(`Eu me chamo ${aluno.nome_completo} nasci no dia ${aluno.data_nascimento}, meu telefone é ${aluno.lista_telefones[1]} e moro na ${aluno.endereço.rua} número ${aluno.endereço.numero} bairro ${aluno.endereço.bairro}`)
+
 
 
 
