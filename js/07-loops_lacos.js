@@ -27,8 +27,19 @@ console.log("\n Exemplo 4: loop e array");
 
     const times = ["Corinthians, Barcelona, Real Madrid, Liverpool, Milan"];
 
+    //Usando loop for tradicional
     for(let i = 0; i < times.length; i++ ){
         console.log( times[i] );
-        
     }
+
+    
+    
+console.log("\n---------\n")
+
+    //usando loop for/of (exclusivo do JS)
+    for(const time of times){
+        console.log(time);
+    }
+
+
     
