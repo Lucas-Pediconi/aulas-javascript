@@ -37,9 +37,37 @@ console.log("\n Exemplo 4: loop e array");
 console.log("\n---------\n")
 
     //usando loop for/of (exclusivo do JS)
+    //usamos uma var/const para acessar cada elemento do array(no caso, times)
     for(const time of times){
         console.log(time);
     }
 
+console.log("\nExemplo 5: loop e ojeto");
 
-    
+const pessoa = {
+    nome: "Cleiton do Arrasa",
+    idade: 40,
+    cidade: "São Paulo",
+    estado: "SP"
+};
+
+//for/in para objetos (exclusivo do JS)
+    for(const prop in pessoa ){
+        console.log(pessoa[prop]);
+    }
+
+/*Exercício: Loop com array de objetos
+Geral Orientações:
+ 
+1. Faça um array chamado "clientes" contendo 3 objetos.
+ 
+Cada objeto deverá ter uma propriedade "identificador" (com valores 1, 2 e 3) e uma propriedade "nome" (com os nomes dos clientes: "Dio", "Ozzy" e "Ian").
+ 
+2. Faça um loop (qualquer um dos que vimos) e mostre no console os dados de cada cliente conforme a seguir:
+ 
+- Cliente: Dio, id: 1
+
+- Cliente: Ozzy, id: 2
+
+- Cliente: Ian, id: 3
+  */
