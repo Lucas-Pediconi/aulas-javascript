@@ -52,15 +52,45 @@ const referencia = document.querySelector("#referencia1");
 
 const botaoModoNoturno = document.querySelector("#noturno");
 
-    botaoModoNoturno.addEventListener("click", function(){
-        pagina.classList.toggle("modo-noturno");
-    })
+  botaoModoNoturno.addEventListener("click", function() {
+    pagina.classList.toggle("modo-noturno");
+//----------------------------------------------------------------------
 
-     botaoModoNoturno.addEventListener("click", function(){
+    pagina.style.transition ="2s";
+
+
+    if (pagina.classList.contains("modo-noturno")) {
         botaoModoNoturno.textContent = "Desativar";
+    } else {
+        botaoModoNoturno.textContent = "Ativar";
+    }
+});
+//-----------------------------------------------------------------------
+//Exemplo 02
+const janelaModal = document.querySelector("#janela");
+
+/*Esta função lida com o evento monitorado pelo listener do document.
+
+Se a posição Y do mouse for abaixo de zero, ou seja, acima do topo do doxumento, fazemos a janelinha ser exibida (showMedal) e desativamos o listener e a propria função, garantindo que essa rotina funcione somente uma vez*/ 
+function gerenciarJanela(event){
+    if(event.clientY < 0){
+        janelaModal.showModal();
+        document.removeEventListener("mouseout", gerenciarJanela);
+    }
+
+    
+}
+//Monitorando o evento mouseout no documento inteiro
+document.addEventListener("mouseout", gerenciarJanela );
+
+/*Selecionamos o botão existente DENTRO da janelaModal (já selecionada anteriomente)*/ 
+const botaoFechar = janelaModal.querySelector("button");
+
+//Quando acontecer o acionamento/clique no botão Fechar, fazemos a janelaModal fechar(close)
+botaoFechar.addEventListener("click", function(){
+    janelaModal.close();
+});
         
-       
-    })    
 
 
 
